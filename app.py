@@ -1,11 +1,7 @@
 from twitter import Twitter
 import time
-# test pancing v2
-<<<<<<< HEAD
-# test pancing v3
-#test pancing v4
-=======
->>>>>>> 6e2a88e5d66e559ecfd9dd59598f1365ba63551a
+
+# test pancing 
 
 tw = Twitter()
 
