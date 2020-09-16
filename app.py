@@ -17,10 +17,10 @@ def start():
                 id = dms[i]['id']
 
                 if len(message) is not 0 and len(message) < 280:
-                    # /keps/ is the keyword
-                    # if you want to turn off the case sensitive like: /keps/, /keps/, /keps/
+                    # ping! is the keyword
+                    # if you want to turn off the case sensitive like: ping!, ping!, ping!
                     # just use lower(message) and check it, but please remove the replace function line
-                    if "/keps/" in message:
+                    if "ping!" in message:
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
