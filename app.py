@@ -20,12 +20,13 @@ def start():
                     # ping! is the keyword
                     # if you want to turn off the case sensitive like: ping!, ping!, ping!
                     # just use lower(message) and check it, but please remove the replace function line
-                    if "ping!" in message:
+                    if "ping!" in lower(message):
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
                                 tw.post_tweet(message)
                                 tw.delete_dm(id)
+                                time.sleep(120)
                             else:
                                 print("DM will be posted with media")
                                 print(dms[i]['shorted_media_url'])
