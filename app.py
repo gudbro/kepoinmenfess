@@ -11,7 +11,7 @@ def start():
     while True:
         if len(dms) is not 0:
             for i in range(len(dms)):
-                lower(message) = dms[i]['message']
+                message = dms[i]['message']
                 # I take sender_id just in case you want to know who's sent the message
                 sender_id = dms[i]['sender_id']
                 id = dms[i]['id']
@@ -20,7 +20,7 @@ def start():
                     # ping! is the keyword
                     # if you want to turn off the case sensitive like: ping!, ping!, ping!
                     # just use lower(message) and check it, but please remove the replace function line
-                    if "ping!" in lower(message):
+                    if "PING!".lower() in message:
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
