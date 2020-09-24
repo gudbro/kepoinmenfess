@@ -20,7 +20,7 @@ def start():
                     # ping! is the keyword
                     # if you want to turn off the case sensitive like: ping!, ping!, ping!
                     # just use lower(message) and check it, but please remove the replace function line
-                    if "PING!".lower() in message:
+                    if "ping!" in message.lower():
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
